@@ -1,35 +1,44 @@
-## Projeto CRUD com Nest.js
+## CRUD project with Nest.js
 
-Este é um projeto de exemplo para demonstrar brevemente a potencialidade do framework Nest.js no desenvolvimento de um sistema de cadastro de e-mails. O projeto utiliza JavaScript como linguagem principal e Node.js como ambiente de execução.
+This is an example project to briefly demonstrate the potential of the Nest.js framework in the development of an email registration system. The project uses JavaScript as the main language and Node.js as the execution environment.
 
-O [NestJS](https://pt.wikipedia.org/wiki/Nest.js) é um framework Node.js de código aberto destinado ao desenvolvimento de aplicativos do lado do servidor. Foi criado por Kamil Mysliwiec e lançado em 2017. Sob o capô, por padrão, o NestJS faz uso do framework Express.js, sendo também compatível com o Fastify. Sua arquitetura é fortemente inspirada no Angular.
+[NestJS](https://pt.wikipedia.org/wiki/Nest.js) is an open source Node.js framework for developing server-side applications. It was created by Kamil Mysliwiec and released in 2017. Under the hood, by default, NestJS makes use of the Express.js framework and is also compatible with Fastify. Its architecture is heavily inspired by Angular.
 
-### Funcionalidades:
+### Requirements:
 
-O projeto possui as seguintes funcionalidades:
+The project has the following features:
 
-- Cadastro de usuários com nome, e-mail e senha.
-- Visualização da lista de usuários cadastrados.
-- Edição de informações de usuários existentes.
-- Exclusão de usuários.
+- Registration of users with name, email and password.
+- Visualization of the list of registered users.
+- Editing existing user information.
+- Exclusion of users.
 
-### Tecnologias Utilizadas
+### Technologies
 
-O projeto faz uso das seguintes tecnologias e ferramentas:
+The project makes use of the following technologies and tools:
 
-- NestJS: Framework JavaScript para desenvolvimento de aplicativos back-end eficientes e escaláveis.
-- Node.js: Ambiente de execução JavaScript do lado do servidor.
+- NestJS: JavaScript framework for developing efficient and scalable back-end applications.
+- Node.js: Server-side JavaScript runtime.
 
-` No projeto não foi utilizado Banco de Dados.`
+```No database was used in the project.```
 
-### Configuração e Uso
+### Configuration and Usage
 
-- Certifique-se de ter o [Node.JS](https://nodejs.org/en) instalado em sua máquina.
-- Clone este repositório para o seu diretório local.
-- Navegue até o diretório raiz do projeto e execute o comando npm install para instalar as dependências.
-- Configure as variáveis de ambiente necessárias, como as credenciais de conexão com o banco de dados.
-- Execute o comando `npm run start:dev` para iniciar o servidor.
-- Acesse [localhost:3001/users](http://localhost:3001/users) em seu navegador para visualizar o sistema.
+- Make sure you have [Node.JS](https://nodejs.org/en) installed on your machine.
+- Clone this repository to your local directory.
+- Navigate to the root directory of the project and run the ```npm install``` command to install the dependencies.
+- Configure required environment variables, such as database connection credentials.
+- Run the command `npm run start:dev` in the terminal to start the server.
+- Access [localhost:3001/users](http://localhost:3001/users) in your browser to view the system
+
+### Routes
+
+- ```GET``` [/users/](http://localhost:3001/users)
+- ```GET``` [/users/:userId](http://localhost:3001/users/id)
+- ```POST``` [/users/](http://localhost:3001/users)
+- ```DELETE``` [/users/:userId](http://localhost:3001/users/id)
+- ```UPDATE``` [/users/:userId](http://localhost:3001/users/id)
+
 
 ## License
 
